@@ -41,7 +41,7 @@ rosrun assignment1_controller assignment1_controller
 ```
 rostopic echo /assignment1/position
 ```
-#Note: 
+# Note: 
 At any stage if there is an error regarding "file not found". Do the following steps.
 
 Step 1: Make sure that currently you are in my_ros_ws directory, execute the following command.
