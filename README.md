@@ -42,9 +42,9 @@ rosrun assignment1_controller assignment1_controller
 rostopic echo /assignment1/position
 ```
 # Note: 
-At any stage if there is an error regarding "file not found". Do the following steps.
+At any stage if there is an error regarding "No such file or directory found" or any command not executing properly. Do the following steps.
 
-Step 1: Make sure that currently you are in my_ros_ws directory, execute the following command.
+Step 1: Make sure that currently you are in my_ros_ws directory, execute the following command
 ```
 cd devel 
 ```
@@ -53,5 +53,5 @@ Step 2: Run the setup.bash file by using this command.
 ```
 source setup.bash 
 ```
-Step 3: Go to my_ros_ws directory again and the run the command you were running before.
+Step 3: Go back to my_ros_ws directory and the run that command again. Hopefully it will run this time.
  
