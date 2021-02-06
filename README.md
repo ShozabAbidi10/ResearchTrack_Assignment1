@@ -4,11 +4,11 @@ The assignment requires controlling a holonomic robot in a 2d space with a simpl
 
 ### Content Structure
 
-There are two packages assignment1_controller and target_srv. Each of these packages contain one node which perform their assigned functionalities. Please find the breadown of these functionalities below. Beside this please also check the graph file separately attached with this repository.
+There are two packages **assignment1_controller** and **target_srv**. Each of these packages contain one node which perform their assigned functionalities. Please find the breadown of these functionalities below. Beside this please also check the graph file separately attached with this repository.
 
 ## assignment1_controller Package
 
-assignmen1_controller package have one ROS node with name assignment1_controller (node1) as well. For this node there is a cpp file with name assignment1_controller.cpp. This node perform following functionalities:
+assignment1_controller package have one ROS node with name assignment1_controller (node1) as well. For this node there is a cpp file with name assignment1_controller.cpp. This node perform following functionalities:
 
 1. It subscribe to the /odom topic and using nav_msgs/Odometry it captures the current position of robot. For this, there is a subscriber implemented in this node. 
 2. Once the current position of the robot is captures the node checks if the difference between the current position and target position is less then 0.1. If this condition satisfy then the node send the request to the target_server (node2) which send back the new target coordinates between range from -6.0 to 6.0. For this, there is a ROS client implemented in this node. 
@@ -22,22 +22,22 @@ assignmen1_controller package have one ROS node with name assignment1_controller
 
 ## Instruction to run the code
 
-1. Launched the simulator by executing the command:
+1. Launched the simulator by executing the following command:
 ```
 rosrun stage_ros stageros $(rospack find assignment1)/world/exercise.world
 ```
 
-2. Launched the target_server (node2) so that it can provide new target position for the robot. Execute the command:
+2. Open a new terminal tab and launched the target_server (node2) so that it can provide new target position for the robot. Execute the command:
 ```
 rosrun target_srv target_server
 ```
 
-3. Launched the assignment1_controller (node1) by executing the command:
+3. Open an other terminal tab and launched the assignment1_controller (node1) by executing the command:
 ```
 rosrun assignment1_controller assignment1_controller
 ```
 
-4. (Optional) You can check what information about robot the custom message is publising in the topic assignment1/position by executing the following command. 
+4. (Optional) You can check what information about robot the custom message is publishing in the topic assignment1/position by executing the following command. 
 ```
 rostopic echo /assignment1/position
 ```
