@@ -20,6 +20,10 @@ assignment1_controller package have one ROS node with name assignment1_controlle
 1. This node implement a ROS server which request for the min and max value of x and y coordinates of the new target positon. 
 2. In reply to this request, it randomly generates a new target position for the robot and sent it to assignment1_controlller (node1)
 
+## Computation graph: 
+
+![alt text](https://github.com/ShozabAbidi10/ResearchTrack_Assignment1/blob/main/computational_graph.PNG)
+
 ## Instruction to run the code
 
 1. Launched the simulator by executing the following command:
