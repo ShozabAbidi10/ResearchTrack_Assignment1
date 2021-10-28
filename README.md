@@ -1,4 +1,4 @@
-# ResearchTrack_Assignment1
+# Assignment 1 of the Research Track 1 course (MSc Robotics Engineering, Unige)
 
 The assignment requires controlling a holonomic robot in a 2d space with a simple 2d simulator, Stage. 
 
